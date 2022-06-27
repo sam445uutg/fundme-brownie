@@ -1,0 +1,22 @@
+dotenv: .env
+Network:
+  default: ganach
+  rinkeby:
+    eth_usd_price_feed: '0x8A753747A1Fa494EC906cE90E9f37563A8AF630e'
+    Publish: True
+  mainnet-fork:
+    eth_usd_price_feed: '0x5f4eC3Df9cbd43714FE2740f5E3616155c5b8419'
+    Publish: False
+  mainnet-fork-dev:
+    eth_usd_price_feed: '0x5f4eC3Df9cbd43714FE2740f5E3616155c5b8419'
+    Publish: False
+  development:
+    Publish: False
+  ganache-locall:
+    Publish: False
+  ganach:
+    Publish: False
+wallets:
+  from: ${PRIVATE_KEY}
+
+
